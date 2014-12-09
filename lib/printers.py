@@ -24,12 +24,15 @@ if platform.system()=='Linux':
         ENDC          = '\033[0m'
 
     def printRed(mess):
+        mess=mess.strip('\r\n')
         print colors.RED    + mess + colors.ENDC
 
     def printPink(mess):
+        mess=mess.strip('\r\n')
         print colors.BLUE   + mess+ colors.ENDC
 
     def printGreen(mess):
+        mess=mess.strip('\r\n')
         print colors.GREEN + mess + colors.ENDC
 
 
