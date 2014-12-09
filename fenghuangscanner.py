@@ -314,7 +314,7 @@ def write_file(file,contents):
 
 if __name__ == '__main__':
     #接受cmd参数
-    parser = argparse.ArgumentParser(description='ports&*weak password scanner. by wilson http://blog.wils0n.cn')
+    parser = argparse.ArgumentParser(description='ports&*weak password scanner. teams:t00ls&&xdsec.  author: wilson ')
     parser.add_argument('--ip',action="store",required=True,dest="ip",type=str,help='ip like 192.168.1.1-254')
     parser.add_argument('--f',action="store",required=True,dest="path",type=str,help='get you results in this file')
     parser.add_argument("--threads",action="store",required=False,dest="threads",type=int,default=50,help='Maximum threads, default 50')
