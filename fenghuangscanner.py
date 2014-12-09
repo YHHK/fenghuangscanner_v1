@@ -1,4 +1,4 @@
-﻿#coding=utf-8
+#coding=utf-8
 __author__ = 'wilson'
 import ctypes,sys
 import argparse
@@ -219,7 +219,7 @@ def pinger():
         ip=q.get()
         if platform.system()=='Linux':
             p=Popen(['ping','-c 1',ip],stdout=PIPE)
-            m = re.findall('(\d)\sreceived', p.stdout.read())
+            m = re.search('(\d)\sreceived', p.stdout.read())
             try:
                 if m.group(1)!='0':
                     pinglist.append(ip)
