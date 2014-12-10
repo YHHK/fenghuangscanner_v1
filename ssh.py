@@ -90,7 +90,7 @@ def ssh():
 def ssh_main(ipdict,threads):
 
     printPink("crack ssh  now...")
-    print "[*] start crack ftp  %s" % time.ctime()
+    print "[*] start crack ssh  %s" % time.ctime()
     starttime=time.time()
     global sp
     sp=Queue()
