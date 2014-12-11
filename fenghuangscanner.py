@@ -431,8 +431,11 @@ if __name__ == '__main__':
     printRed("[*] all has done,it has Elapsed time:%s \r\n" % (time.time()-friststarttime))
 
     #将弱口令 信息 记录文件
-    for name in result.keys():
-            for i in xrange(len(result[name])):
-                write_file(contents=result[name][i],file=file)
+    if len(result)!=0:
+        for name in result.keys():
+                for i in xrange(len(result[name])):
+                    write_file(contents=result[name][i],file=file)
+    else:
+        write_file(contents='no weaken password = =|||',file=file)
 
     printRed("I have put all you want into %s" % file)
